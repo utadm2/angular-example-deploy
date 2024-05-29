@@ -1,0 +1,7 @@
+<div class="mx-auto md:w-2/3 lg:w-1/3">
+  <app-form-movie (movie)="addMovie($event)"> </app-form-movie>
+
+  <ng-template ngFor let-movie [ngForOf]="movies">
+    <app-item-movie [movieInput]="movie" />
+  </ng-template>
+</div>
